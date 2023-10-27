@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "5998713e-0b7f-498b-b7af-c6302bebd959",
+		"name": "PG_YES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1408948"
+	},
+	"item": [
+		{
+			"name": "API_STATUS_COMMENT",
+			"item": [
+				{
+					"name": "SENTIMENTAL_API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/sentimental",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sentimental"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "1.41",
+									"disabled": true
+								},
+								{
+									"key": null,
+									"value": "2.7",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API_FACEBOOK_META",
+			"item": [
+				{
+					"name": "MY_INFO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://graph.facebook.com/me?fields=id,name&access_token=EAAD7RfDPm4ABO94HztnRBa70irTh0bpAhi3kwv2gw867Tt7tiDDaxarnXL1hs0y9vGcmsFX74GKCZAMJPM9P28rYeBuS7ajNyLvFbLb0tc8i7EInA17QK4f0ZAaIkZAI9DK4I3L3ZCQYHoWcDfaeXa7dK7qiJOSv19YgC1nkh9lAFV1hbteMJlxA",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name"
+								},
+								{
+									"key": "access_token",
+									"value": "EAAD7RfDPm4ABO94HztnRBa70irTh0bpAhi3kwv2gw867Tt7tiDDaxarnXL1hs0y9vGcmsFX74GKCZAMJPM9P28rYeBuS7ajNyLvFbLb0tc8i7EInA17QK4f0ZAaIkZAI9DK4I3L3ZCQYHoWcDfaeXa7dK7qiJOSv19YgC1nkh9lAFV1hbteMJlxA"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SHOW_ACCOUNTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://graph.facebook.com/me/accounts?access_token=EAAD7RfDPm4ABO94HztnRBa70irTh0bpAhi3kwv2gw867Tt7tiDDaxarnXL1hs0y9vGcmsFX74GKCZAMJPM9P28rYeBuS7ajNyLvFbLb0tc8i7EInA17QK4f0ZAaIkZAI9DK4I3L3ZCQYHoWcDfaeXa7dK7qiJOSv19YgC1nkh9lAFV1hbteMJlxA",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"me",
+								"accounts"
+							],
+							"query": [
+								{
+									"key": "access_token",
+									"value": "EAAD7RfDPm4ABO94HztnRBa70irTh0bpAhi3kwv2gw867Tt7tiDDaxarnXL1hs0y9vGcmsFX74GKCZAMJPM9P28rYeBuS7ajNyLvFbLb0tc8i7EInA17QK4f0ZAaIkZAI9DK4I3L3ZCQYHoWcDfaeXa7dK7qiJOSv19YgC1nkh9lAFV1hbteMJlxA"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SHOW_POSTS",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "READ_COMMENTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://graph.facebook.com/104231448853466/feed?fields=id,comments&access_token=EAAD7RfDPm4ABO1UPyEU2oBYYEkaqPgltESQdI6uyAa5JxZBVQ6c6GrwVP2WSaBGXtWXf6nBOKZBk3mVyMElDeKpRaemZBbInaVhUNLZANuDFrcYs9RT4eR3jZBLkiK7A68MTPdZCKsP2oTZB6CWt04BFAh4ZCQZAkf1PHolLjcnlZCCrOwY1RFZCR4bddw3CMKZBEW0ZD",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"104231448853466",
+								"feed"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,comments"
+								},
+								{
+									"key": "access_token",
+									"value": "EAAD7RfDPm4ABO1UPyEU2oBYYEkaqPgltESQdI6uyAa5JxZBVQ6c6GrwVP2WSaBGXtWXf6nBOKZBk3mVyMElDeKpRaemZBbInaVhUNLZANuDFrcYs9RT4eR3jZBLkiK7A68MTPdZCKsP2oTZB6CWt04BFAh4ZCQZAkf1PHolLjcnlZCCrOwY1RFZCR4bddw3CMKZBEW0ZD"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
