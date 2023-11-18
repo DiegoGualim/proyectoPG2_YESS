@@ -4,6 +4,7 @@ const cors = require('cors')
 const httpException = require('./src/utils/httpException.utils.js')
 const errorMiddleware = require('./src/middleware/error.middleware.js')
 const sentimentalRouter = require('./src/routes/sentimental.router.js')
+const User = require('./src/routes/user.router.js')
 
 // Init express
 const app = express()
@@ -22,6 +23,7 @@ const port = Number(process.env.PORT || 3331)
 app.get('/', (req, res) => res.send('Hello World!'))
 //ROUTES------------------------------------
 app.use('/api/sentimental', sentimentalRouter)
+app.use('/api/user', User)
 
 // 404 error
 app.all('*', (req, res, next) => {
